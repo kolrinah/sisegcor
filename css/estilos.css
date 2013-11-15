@@ -1,0 +1,949 @@
+/* 
+    Documento   : estilos
+    Creado en   : 27/01/2013, 07:52:44 PM
+    Autores     : Ing. Reiza García / TSU. Gabriela Montero
+    Descripción:  Hoja de Estilos del Sistema 
+*/
+@charset "utf-8";
+html, body{
+  /*background-color:#EFF5FB;*/
+  background-image: url('../imagenes/casaamarilla.png') ;
+  
+  font-family: "Trebuchet MS", Tahoma, sans, freesans, sans-serif;
+}
+
+label, legend{
+ font-size:1.2em;
+ font-weight: normal;
+}
+
+label, legend, h5{
+        
+        color:black;
+        text-shadow: 
+                     white 0.1em 0.1em 0.5em,
+                     white -0.1em -0.1em 0.5em;
+}
+
+textarea{
+  font-family: "Trebuchet MS", Tahoma, sans, freesans, sans-serif;
+}
+
+h1 {    
+  font-weight: bold;
+  font-size: 34px;
+  text-shadow: 2px 3px 3px #fff, 
+               3px 3px 10px #EBEBEB;
+  color:hsl(211, 22%, 44%);
+  text-align: center;  
+}
+
+h4{
+    margin-bottom: 10px!important;
+}
+
+#logo_gob {
+   background-color: #fff;
+   padding: 0px 1px 1px 1px;
+   z-index: 5;
+   border-radius: 0 0 20px 20px;
+   -moz-border-radius: 0 0 20px 20px;
+   -webkit-border-radius: 0 0 20px 20px;
+   -o-border-radius: 0 0 20px 20px;
+   box-shadow: 3px 3px 10px 5px #888888;
+   -moz-box-shadow: 3px 3px 10px 5px #888888;
+   -webkit-box-shadow: 3px 3px 10px 5px #888888;
+   -o-webkit-box-shadow: 3px 3px 10px 5px #888888;
+   position: absolute;
+   top: 0;
+}
+
+#banner_gob{
+   height:71px;   
+   border-radius: 0 0 20px 20px;
+   -moz-border-radius: 0 0 20px 20px;
+   -webkit-border-radius: 0 0 20px 20px;
+   -o-border-radius: 0 0 20px 20px;
+}
+
+.menu {
+   padding: 0px 1px 1px 1px;
+   position: fixed;    
+   top:0px;   
+   z-index: 80;
+}
+
+.menu table tr:first-child td{
+    background-color: white;
+}
+
+.menu table td{
+    vertical-align: middle;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+.menu ul li {
+   width: 100px;
+   text-align: center;
+}
+.menu ul li.nivel1 { 
+   float: right;
+   margin-right: 5px !important;
+}
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 3px #333;  
+    background-color: hsl(211, 22%, 44%);
+    border: solid 1px #fff;
+    border-radius: 5px;
+     -moz-border-radius: 5px;
+     -webkit-border-radius:5px;
+     -o-webkit-border-radius:5px;
+    box-shadow: 1px 1px 1px 0px #888888;
+    -moz-box-shadow: 1px 1px 1px 0px #888888;
+    -webkit-box-shadow: 1px 1px 1px 0px #888888;
+    -o-webkit-box-shadow: 1px 1px 1px 0px #888888;
+    padding: 0px;
+    position: relative;
+}
+
+.menu ul li a.nivel1, .menu ul li a.nivel2 {
+    display: block!important;
+   /* display: none;*/
+    position: relative;
+}
+.menu ul li:hover {position: relative;
+}
+.menu ul li a:hover, .menu ul li:hover a.nivel1 {
+background-color:hsl(217, 100%, 87%);
+color: #000;
+text-shadow: 2px 2px 3px #fff;  
+position: relative;
+}
+.menu ul li ul {display: none;
+}
+.menu ul li:hover  ul.nivel2, .menu ul li a:hover  ul.nivel2{display: block;
+position: absolute;left: 10px;
+padding: 2px;
+}
+
+.menu ul li ul li a:hover ul.nivel3, .menu ul li ul li:hover ul.nivel3 {display: block;
+position: absolute;
+/*left: 161px!important;*/
+left: 160px;
+/*top:0px!important;*/
+top: 1px;
+}
+.menu ul li ul li a {width: 160px;
+padding: 1px;
+margin: 2px;
+border-top-color: transparent;
+}
+.menu ul li ul li a:hover {border-top-color: #000;
+position: relative;
+}
+.menu ul li ul li ul li a.primera {border-top-color: #fff;
+}
+
+.WhereAmI{
+    max-width: 200px;
+    text-align: center;
+    padding-bottom: 3px;
+    background-color: hsl(211, 22%, 44%); /*#E13300;*/
+    color: #fff;
+    text-shadow: 2px 2px 3px #333;    
+    border-bottom: solid 1px #fff; 
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius:0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 1px 0px #888888;
+    -moz-box-shadow: 1px 1px 1px 0px #888888;
+    -webkit-box-shadow: 1px 1px 1px 0px #888888;
+    -o-webkit-box-shadow: 1px 1px 1px 0px #888888;
+}
+
+.CuerpoPpal {
+ min-height: 100%;
+ height: auto !important;
+ height: 100%;
+ margin: 0 auto -45px;
+ z-index: 1;
+}
+
+.AjusteTop{
+  margin-top: 130px;
+}
+
+.AjusteBottom{
+  margin-bottom: 20px;
+}
+
+#pie{    
+   height:45px;
+   color:#000;
+   background-color: hsl(217, 100%, 87%);
+   padding: 2px 4px 2px 4px;
+   border-radius: 20px 20px 0 0;
+   -moz-border-radius: 20px 20px 0 0;
+   -webkit-border-radius: 20px 20px 0 0;
+   -o-border-radius: 20px 20px 0 0;
+   box-shadow: 3px -3px 10px 5px #888888;
+   -webkit-box-shadow: 3px -3px 10px 5px #888888;
+   -moz-box-shadow: 3px -3px 10px 5px #888888;   
+   -o-box-shadow: 3px -3px 10px 5px #888888; 
+   z-index: 5;
+   text-align: center;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+div.CampoInvalido:after{
+    content: "\00a0"; 
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-left: 2px;
+    background-image:url('../imagenes/cancel16.png'); 
+}
+
+.Formulario table{
+    width: 100%;
+    max-width: 100%;
+    max-height: 90%;    
+    background-color: hsl(0, 0%, 94%);
+    border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius:10px;
+     -o-border-radius: 10px;    
+    /*box-shadow: 2px 2px 5px 2px #888888;*/
+    box-shadow: 2px 2px 5px 2px #888888;
+    -moz-box-shadow: 2px 2px 5px 2px #888888;
+    -webkit-box-shadow: 2px 2px 5px 2px #888888;
+    -o-box-shadow: 2px 2px 5px 2px #888888;
+    overflow: scroll;  
+}
+
+.Formulario thead th{    
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    height: 30px;
+    vertical-align: middle;
+    padding: 0 0 0 20px;
+    background-color:hsl(211, 22%, 44%);
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0;
+    -webkit-border-radius:10px 10px 0 0;
+    -o-border-radius:10px 10px 0 0; 
+    border-bottom: white inset 2px;
+}
+
+.Formulario tbody td{
+    font-size: 1em;
+    text-align:left;
+    vertical-align:top;
+    padding:5px 10px 5px 10px;
+}
+
+.Formulario tbody tr:last-child td{
+    padding-bottom: 10px;
+}
+
+.Formulario legend{
+    font-size: 1em;
+    color: #003399;
+    text-shadow: none;
+    margin-bottom: 1px;
+}
+
+table.SubFormulario, div.SubFormulario{
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 94%);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 1px 1px 2px 2px #888888;
+    -moz-box-shadow: 1px 1px 2px 2px #888888;
+    -webkit-box-shadow: 1px 1px 2px 2px #888888;
+    -o-box-shadow: 1px 1px 2px 2px #888888;
+    padding: 5px;    
+    /*overflow: scroll;*/
+}
+
+.SubFormulario tbody td{    
+    padding:0px;
+    vertical-align:middle;    
+}
+
+.SubFormulario tbody tr:nth-child(2n+1) td{
+   padding:5px 5px 0px 10px;
+}
+
+.SubFormulario tbody tr:nth-child(2n) td{
+   padding:0px 5px 0px 30px;
+}
+
+.SubFormulario tbody tr td img{
+   padding:0px 0px 2px 5px;
+}
+
+.SubFormulario tbody tr:last-child td{
+   padding-bottom: 5px;
+}
+
+.SubFormulario thead th:only-child{
+    font-size: 1em;
+    font-weight: normal;
+    text-align: left;
+    color: #000;
+    height: 20px;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+    background-color: hsl(211, 22%, 44%);
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.SubFormulario thead th{
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    color: #000;
+    height: 20px;
+    vertical-align: middle;
+    padding: 0 0 0 10px;
+    background-color:hsl(211, 22%, 44%);
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.SubFormulario label{
+    color:#000;
+    font-size: 1em;
+    font-family:  sans-serif;    
+    text-shadow: none;
+}
+
+.EntraDatos table{
+    width: 100%;
+    max-width: 100%;
+    max-height: 90%;    
+    margin-top:60px;    
+    background-color:hsl(0, 0%, 87%);
+    border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius:10px;
+     -o-border-radius: 10px;    
+   box-shadow: 3px 3px 10px 5px #888888;
+   -moz-box-shadow: 3px 3px 10px 5px #888888;
+   -webkit-box-shadow: 3px 3px 10px 5px #888888;
+   -o-webkit-box-shadow: 3px 3px 10px 5px #888888;
+    overflow: scroll;  
+}
+
+.EntraDatos label{
+    font-size: 1em;
+    font-weight:  normal;
+    color: #000;
+    text-shadow: hsl(0, 0%, 89%) 0.1em 0.1em 0.2em;
+}
+
+.EntraDatos thead th{    
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    height: 30px;
+    vertical-align: middle;
+    padding: 0 0 0 20px;
+    background-color:hsl(211, 22%, 44%);
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0;
+    -webkit-border-radius:10px 10px 0 0;
+    -o-border-radius:10px 10px 0 0; 
+    border-bottom: white inset 2px;
+}
+
+.EntraDatos tbody td{
+    font-size: 1.2em;
+    text-align:left;
+    vertical-align:middle;
+    padding:10px 10px 5px 40px;
+/*    border: #000 dotted thin;*/
+}
+
+.EntraDatos tbody div{
+    text-align: left;
+    padding: 0 0 10px 20px; 
+}
+
+.EntraDatos p{
+    /*font-size: .9em;*/
+    color: red;
+    margin-top: 10px;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.EntraDatos tfoot td{    
+    text-align:right !important;
+    border-top: white inset 2px;
+    padding:10px 30px 10px 10px;
+}
+
+.EntraDatos thead input{
+    background-color: transparent;
+    font: inherit;
+    color: #fff;
+    border: 0;
+}
+
+.Info tbody td{
+    font-size: 1.1em;
+    padding:10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.Info label{
+    font-size: 1em;
+    font-weight: bold;
+    font-style:  italic;
+}
+
+#unidad{    
+    width: 740px;
+    margin-left: 0;
+    padding: 10px 0 10px 0;
+}
+
+#unidad:focus, #codigo:focus, .NvaDependencia:focus{
+    background-color: #ffffcc;
+    box-shadow: 0px 0px 40px 10px white;
+}
+
+.superior, #unidad{
+    background-color: white;    
+    /*font-weight: bold;    */
+    text-align: center;    
+    border: #576F89 solid 5px;
+    border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -o-border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px #888888;
+      -moz-box-shadow: 5px 5px 10px 1px #888888;
+      -webkit-box-shadow: 5px 5px 10px 1px #888888;
+      -o-box-shadow: 5px 5px 10px 1px #888888;
+}
+
+.superior{    
+    width:400px;
+    text-align: center;
+    margin-left:75px;
+    padding: 10px;
+}
+
+.lineas_orga{
+    content: "\00a0";
+    margin-left: 300px;
+    height: 20px;
+    width:0;
+    border:#576F89 solid 2px;
+    box-shadow: 5px 5px 10px 1px #888888;        
+}
+
+.TablaNivel1{
+    background-color: white;   
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    -o-border-radius:10px;
+    box-shadow: 1px 1px 10px 5px #888888;
+    -moz-box-shadow: 1px 1px 10px 5px #888888;
+    -webkit-box-shadow: 1px 1px 10px 5px #888888;
+    -o-box-shadow: 1px 1px 10px 5px #888888;
+}
+
+.TablaNivel1 tbody tr:nth-child(4n+3), .TablaNivel1 tbody tr:nth-child(4n+4){
+   background-color: #F2F2F2;
+}
+
+.TablaNivel1 td{    
+    padding: 10px 5px 0 0;
+    text-align: center;
+}
+
+.TablaNivel1 th{
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    background-color:hsl(211, 22%, 44%);
+}
+
+.TablaNivel1 th:first-child {
+    -moz-border-radius: 10px 0 0 0;
+    -webkit-border-radius: 10px 0 0 0;
+    border-radius: 10px 0 0 0;
+}
+
+.TablaNivel1 th:last-child {
+    -moz-border-radius: 0 10px 0 0;
+    -webkit-border-radius: 0 10px 0 0;
+    -o-webkit-border-radius: 0 10px 0 0;
+    border-radius: 0 10px 0 0;
+   /* padding-right: 5px;*/
+}
+
+.TablaNivel1 th:only-child, .EntraDatos th{
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -o-webkit-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    padding: 0 0 0 5px;
+}
+
+.TablaNivel1 tfoot td{
+    padding: 5px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    border-top-style: solid;
+    border-top-color: #fff;
+    border-top-width:1px;
+    background-color:hsl(211, 22%, 44%);
+}
+
+.TablaNivel1 tfoot td:first-child {
+    -moz-border-radius: 0 0 0 10px;
+    -webkit-border-radius: 0 0 0 10px;
+    border-radius: 0 0 0 10px;
+    -o-border-radius: 0 0 0 10px;
+}
+
+.TablaNivel1 tfoot td:last-child {
+    -moz-border-radius: 0 0 10px 0;
+    -webkit-border-radius: 0 0 10px 0;
+    -o-border-radius: 0 0 10px 0;
+    border-radius: 0 0 10px 0;
+}
+
+.TablaNivel1 tfoot td:only-child{
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius:  0 0 10px 10px;
+    -o-border-radius:  0 0 10px 10px;
+}
+
+table.Correspondencias thead th, table.Correspondencias tfoot td{
+    font-size: .9em!important;
+    max-height: 32px;
+    text-align: center;
+}
+
+table.Correspondencias tbody td{
+    font-size: .9em;
+    text-align: left;
+    overflow: hidden;
+}
+
+div.Oculto{
+    visibility: hidden;
+    height: 1px;
+    width: 2px;
+    overflow: hidden;
+}
+
+
+.NvaDependencia{
+    width:100%;
+/*    font-weight:bold;*/
+    background-color: #ffffcc;
+    /*box-shadow: 0px 0px 40px 10px white;*/
+}
+
+.Editable{        
+    background-color: #ffffcc;
+    border: #f9dd34 inset 2px;
+}
+
+.FondoBlanco{
+    background-color: #fff;
+    border: #888888 inset 1px;
+}
+
+.Botonera{
+    margin: 0 50px 0 0;
+}
+
+.Botonera div{
+    width: 140px;
+    height: 20px;
+    background-color: #EFF5FB;
+    border-style:  solid;
+    border-width: 1px 1px 1px 1px;
+    border-color:#576F89;
+    display: inline;
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+    color: #576F89;
+}
+
+.Botonera div:hover{
+    background-color: #B1C8E1;
+    border-color:#B1C8E1;
+    cursor: pointer;    
+    color: #000;
+}
+
+.Nivel3 div:hover{
+    border-color: #f9dd34!important;
+    background-color:#ffef8f!important;
+}
+
+.Nivel3Pisado {
+    background-color: #f9dd34 !important;
+    color:black !important;
+    border-color:#f9dd34 !important;
+    font-weight: bold !important;
+}
+
+.BotonPisado {
+    background-color: #B1C8E1 !important;
+    color:black !important;
+    border-color:#B1C8E1 !important;
+    font-weight: bold !important;
+}
+
+.TablaNivel2{
+    /*background-color: #B1C8E1;*/  
+    width: 100%;
+    background-color:transparent;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    -o-webkit-border-radius:10px;
+    margin: 0 0 20px 0;  
+}
+
+.TablaNivel2 table{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 3px 3px 5px 2px #888888 !important;
+    -moz-box-shadow: 3px 3px 5px 2px #888888 !important;
+    -webkit-box-shadow: 3px 3px 5px 2px #888888 !important;
+    -o-webkit-box-shadow: 3px 3px 5px 2px #888888 !important;
+}
+
+.TablaNivel2 th{    
+    color: black;
+    background-color: #B1C8E1;
+}
+
+.TablaNivel2 th:only-child {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.TablaNivel2 table tbody td{
+    text-align: left;
+    padding-left: 5px;
+}
+
+.TablaNivel2 table tbody td:last-child{
+    vertical-align: middle;
+    text-align: center!important;
+    padding-left: 0px!important;
+}
+
+.TablaNivel2 table tbody td:first-child{
+    text-align: center;
+    padding-left: 0px!important;
+}
+
+.TablaNivel2 tfoot td{   
+    text-align: right;
+    color: black;
+    background-color: #B1C8E1;
+    padding: 2px 10px 2px 10px;
+}
+
+.TablaNivel2 tbody tr:nth-child(4n+1), .TablaNivel2 tbody tr:nth-child(4n+2){
+   background-color: #E3E3E3;   
+}
+
+.TablaNivel3{ 
+    background-color:transparent;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius:10px;
+    -o-webkit-border-radius:10px;
+    margin: 0 20px 20px 0;  
+    width: 100%;
+}
+
+.TablaNivel3 tbody tr:nth-child(2n){
+    background-color:#EBEBEB;
+}
+
+.TablaNivel3 tbody tr:nth-child(2n+1){
+    background-color: #fff;
+}
+
+.TablaNivel3 th, .TablaNivel3 tfoot td{    
+    color: black;
+    background-color: #f9dd34;
+}
+
+.TextoTabla{
+    text-align: left!important;
+}
+
+.Zebrado tbody tr:nth-child(2n+1){
+   background-color: #F2F2F2;
+}
+
+.Zebrado tbody tr:nth-child(2n){
+   background-color: #ffffff;
+}
+
+.Zebrado tbody tr td{
+    padding: 3px 5px 3px 5px;
+}
+
+.CeldaIconos {
+   text-align:center!important;
+   vertical-align: top!important;
+}
+
+.CeldaIconos img{   
+   padding-bottom: 10px !important;
+}
+
+.Nro{
+    background-color: transparent;
+    padding-top: 0 !important;
+    text-align: center;
+    /*vertical-align: middle;*/
+    border: 0;
+    resize: none;
+}
+
+.Nom{    
+    background-color: transparent;    
+    /*vertical-align: middle;*/
+    border: 0;
+    width: 98%;
+    resize: none;
+}
+
+.Campos{
+    width: 90%;
+    resize: none;
+}
+
+.CampoFicha{
+    font-size: 1em;
+    width: 95%;
+    resize: vertical;
+}
+
+.Fechas{
+    text-align: center;
+    width: 100px;    
+}
+
+.Titulos{
+    font-size: 19px;
+    font-weight: bold;
+    background-color: transparent;
+    border-style: none;
+    text-align: center;
+}
+
+div.BotonIco a, div.Editable a{
+    text-decoration: none;
+}
+
+div.BotonIco{
+    /*float: right;*/
+    display:  inline-block;
+    position: relative;
+    vertical-align: middle;    
+    text-align: center;    
+    font-size: 1.2em;
+    vertical-align: central;
+    background-color: #E3E3E3;
+    padding: 1px;
+    width: 150px;
+    height: 32px;
+    border-top: #fff solid 2px;
+    border-left: #fff solid 2px;
+    border-bottom: #888888 solid 2px;
+    border-right: #888888 solid 2px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+div.BotonIco:hover{    
+    border: #B1C8E1 solid 2px;
+    background-color: #EFF5FB;
+}
+
+.BotonIco:hover{
+    cursor: pointer;
+}
+
+#cargandoModal{    
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background: hsla(210, 60%, 96%, .6) url('../imagenes/cargandoRed.gif') no-repeat fixed center;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: none;
+}
+
+#VentanaModal{    
+    text-align: center;
+    vertical-align: central;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background: hsla(210, 60%, 96%, .7);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+#VentanaModal table{
+    width: 900px;
+    min-height: 200px;
+    margin-left: -450px;
+    margin-top: -250px;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+
+div.ToggleBoton{
+    display:  inline-block; 
+    text-align: center!important;    
+    vertical-align: middle!important;
+    background-color: #E3E3E3!important;
+    padding: 5px!important;
+   /* width: 100px!important;
+    height: 32px!important;*/
+    border-top: #fff solid 2px;
+    border-left: #fff solid 2px;
+    border-bottom: #888888 solid 2px;
+    border-right: #888888 solid 2px;
+    border-radius: 25px!important;
+    -moz-border-radius: 25px!important;
+    -webkit-border-radius: 25px!important;
+    -o-border-radius: 25px!important;
+    box-shadow: hsl(211, 22%, 44%) 0.2em 0.2em 0.4em; 
+    -moz-box-shadow: hsl(211, 22%, 44%) 0.2em 0.2em 0.4em; 
+    -webkit-box-shadow: hsl(211, 22%, 44%) 0.2em 0.2em 0.4em; 
+    -o-box-shadow: hsl(211, 22%, 44%) 0.2em 0.2em 0.4em; 
+}
+
+div.ToggleBoton:hover{
+    border-top: #B1C8E1 solid 2px!important;
+    border-left: #B1C8E1 solid 2px!important;
+    border-bottom: #B1C8E1 solid 2px!important;
+    border-right: #B1C8E1 solid 2px!important;
+    background-color: #EFF5FB!important;
+    cursor: pointer;
+}
+
+.inactivo{
+    color:#888888;
+    font-weight: bolder!important;
+    text-decoration: line-through;
+    -moz-text-decoration: line-through; 
+    -webkit-text-decoration: line-through;
+    -o-webkit-text-decoration: line-through;
+}
+
+.Cuadricula{
+    background-image: url('../imagenes/cuadricula.png')!important;
+    vertical-align:middle!important;
+    padding: 0!important;
+    margin: 0!important;
+    color:#E13300;
+}
+
+.Resaltado:hover{    
+   cursor: pointer;
+   color: #E13300;
+}
+
+.Gantt{
+    background-color: #3366FF;    
+}
+
+table.Movimientos{
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;    
+}
+
+.Movimientos tbody tr td{
+    padding: 0px 5px;    
+}
+
+.Movimientos tbody tr:nth-child(2n+1) td {
+    padding: 5px;
+    background-color: hsl(217, 50%, 90%);    
+}
+
+.Movimientos tbody tr:nth-child(2n) td {
+    padding: 5px;
+    background-color: hsl(217, 50%, 87%);        
+}
+
+.Movimientos thead th {
+    text-align: center;
+    color: #fff;
+    padding: 2px; 
+    background-color: hsl(211, 22%, 44%);
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.Movimientos tbody tr:last-child td{
+    background-color: #f9dd34;
+}
